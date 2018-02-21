@@ -135,7 +135,8 @@ tar xzvf /opt/zimbra-install/zimbra-zcs-8.7.11.tar.gz -C /opt/zimbra-install/
 
 echo "Installing Zimbra Collaboration just the Software"
 cd /opt/zimbra-install/zcs-* && ./install.sh -s < /opt/zimbra-install/installZimbra-keystrokes
-
+#reference 
+#https://knowto.org/2017/09/14/centos-docker-container-su-cannot-open-session-permission-denied/
 mv /etc/security/limits.conf /etc/security/limits.conf.old
 echo "Change limit"
 cat <<EOF >>/etc/security/limits.conf
