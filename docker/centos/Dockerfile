@@ -33,4 +33,3 @@ COPY etc /etc/
 
 CMD ["/bin/bash", "/opt/start.sh", "-d"]
 
-© 2018 GitHub, Inc.
